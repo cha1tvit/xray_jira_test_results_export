@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>SERENITY_SCREENSHOT</artifactId>
+    <artifactId>xray_jira_test_results_export</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
