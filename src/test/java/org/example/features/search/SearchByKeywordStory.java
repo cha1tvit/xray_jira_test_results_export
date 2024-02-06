@@ -1,5 +1,6 @@
 package org.example.features.search;
 
+import app.getxray.xray.junit.customjunitxml.annotations.XrayTest;
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.Issue;
 import net.thucydides.core.annotations.Managed;
@@ -22,6 +23,8 @@ public class SearchByKeywordStory {
     public EndUserSteps anna;
 
     @Test
+    @XrayTest(key = "XRTMP-15")
+//    @Requirement("XPTO-2847")
     public void searching_by_keyword_apple_should_display_the_corresponding_article() {
         anna.is_the_home_page();
         anna.looks_for("apple");
