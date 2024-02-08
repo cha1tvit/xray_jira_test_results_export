@@ -46,6 +46,7 @@ public class SearchByKeywordStory {
     }
 
     @Test
+    @XrayTest(key = "XRTMP-15")
     public void verify_IF_OfferIsRetractedWhenBuyerHasNoSufficientFunds() {
         anna.is_the_home_page();
         anna.looks_for("pineapple");
