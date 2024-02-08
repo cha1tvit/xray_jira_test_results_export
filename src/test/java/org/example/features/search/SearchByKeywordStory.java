@@ -23,7 +23,7 @@ public class SearchByKeywordStory {
     public EndUserSteps anna;
 
     @Test
-//    @XrayTest(key = "XRTMP-15")
+    @XrayTest(key = "XRTMP-35")
 //    @Requirement("XPTO-2847")
     public void searching_by_keyword_apple_should_display_the_corresponding_article() {
         anna.is_the_home_page();
@@ -46,7 +46,7 @@ public class SearchByKeywordStory {
     }
 
     @Test
-    public void verifyIfOfferIsRetractedWhenBuyerHasNoSufficientFunds() {
+    public void verify_IF_OfferIsRetractedWhenBuyerHasNoSufficientFunds() {
         anna.is_the_home_page();
         anna.looks_for("pineapple");
     }
