@@ -23,7 +23,7 @@ public class SearchByKeywordStory {
     public EndUserSteps anna;
 
     @Test
-    @XrayTest(key = "XRTMP-15")
+//    @XrayTest(key = "XRTMP-15")
 //    @Requirement("XPTO-2847")
     public void searching_by_keyword_apple_should_display_the_corresponding_article() {
         anna.is_the_home_page();
@@ -40,7 +40,13 @@ public class SearchByKeywordStory {
     }
 
     @Test
-    public void searching_by_ambiguious_keyword_should_display_the_disambiguation_page() {
+    public void searching_by_ambiguious_keyword_should_display_the_disambiguation_page_NEW() {
+        anna.is_the_home_page();
+        anna.looks_for("pineapple");
+    }
+
+    @Test
+    public void verifyIfOfferIsRetractedWhenBuyerHasNoSufficientFunds() {
         anna.is_the_home_page();
         anna.looks_for("pineapple");
     }
